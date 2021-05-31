@@ -8,4 +8,4 @@
 - `docker-compose up`
 
 ### 客户端
-[客户端配置](https://github.com/yhkang/docker-caddy-v2ray/blob/main/v2ray-client-config.jpg)
+![客户端配置](https://github.com/yhkang/docker-caddy-v2ray/blob/main/v2ray-client-config.jpg)
