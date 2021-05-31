@@ -1,0 +1,33 @@
+{
+    "log": {
+     "loglevel": "warning",
+     "access": "/var/log/v2ray/access.log",
+     "error": "/var/log/v2ray/error.log"
+    },
+     "inbounds": [
+       {
+         "port": 8082,
+         "protocol": "vmess",
+         "settings": {
+           "clients": [
+             {
+               "id": "05105e7d-2da8-4d5f-84c1-9952157e3d23", //自行生成uuid
+               "alterId": 64
+             }
+           ]
+         },
+         "streamSettings": {
+           "network": "ws",
+           "wsSettings": {
+                "path": "/ws"
+           }
+         }
+       }
+     ],
+     "outbounds": [
+       {
+         "protocol": "freedom",
+         "settings": {}
+       }
+    ]
+}
