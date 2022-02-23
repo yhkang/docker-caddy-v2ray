@@ -1,9 +1,13 @@
 example.com
 {
   timeouts none
-  log /var/log/caddy/caddy.log
+  log /var/log/caddy/caddy.log {
+    rotate_size 10 # 10 MB
+    rotate_age 31 # 31 days
+    rotate_keep 10 # keep 10 files
+  }
   root ./
-  proxy /ws v2ray:8082 {
+  proxy /ws v2ray:10086 {
     websocket
     header_upstream -Origin
   }

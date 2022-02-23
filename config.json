@@ -6,12 +6,12 @@
     },
      "inbounds": [
        {
-         "port": 8082,
+         "port": 10086,
          "protocol": "vmess",
          "settings": {
            "clients": [
              {
-               "id": "05105e7d-2da8-4d5f-84c1-9952157e3d23", //自行生成uuid
+               "id": "替换为自行生成的uuid",
                "alterId": 64
              }
            ]
