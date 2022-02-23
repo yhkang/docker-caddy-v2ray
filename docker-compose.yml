@@ -18,5 +18,5 @@ services:
     image: v2ray/official
     container_name: v2ray
     volumes:
-      - ./config.json:/etc/v2ray/config.json
+      - ./v2ray.json:/etc/v2ray/config.json
       - ./log/v2ray:/var/log/v2ray
